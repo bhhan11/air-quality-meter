@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air quality meter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class = "model_frame" id = "modelFrame">
+        <div class="clock_box">
+            <output id="clock" class="clock_css"></output>
+        </div>
+        <img src="wifi2.png" class="wifi_css">
+        <img class="face_css" id="face_id">
+        <output class="face_css2" id="face_id2"></output> 
+        <img src="bettery.png" class="bettery_css">
+
+
+        <div class="result_box">
+            <input type="text" readonly class="result_number" id="result1">  
+            <input type="text" readonly class="result_unit" id ="result2">
+        </div>
+
+        
+        <div class ='btn_box'>
+            <button class="btn" style="margin-left: 3px;">PM2.5</button>
+            <button class="btn">PM10</button>
+            <button class="btn" id="btn_tvoc">TVOC</button>
+            <button class="btn">CO2</button>
+            <button class="btn">Temp</button>
+            <button class="btn" style="margin-right: 3px;">btn</button>
+        </div>
+    </div>  
+
+    
+    <script type="module" src="app.js"></script>
+    <canvas></canvas>
+    
+</body>
+</html>
